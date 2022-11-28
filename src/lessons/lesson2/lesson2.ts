@@ -23,12 +23,12 @@ console.log('lesson 2');
 
 // Task 01
 // Реализовать функцию sum которая суммирует 2 числа следующим образом sum(3)(6) === 9
- function sum(a: number) {
-     return function (b: number) {
-         return a + b
-     }
- }
- alert(sum(3)(6))
+function sum(a: number) {
+    return function (b: number) {
+        return a + b
+    }
+}
+alert(sum(3)(6))
 
 
 // Task 02
@@ -41,9 +41,9 @@ console.log('lesson 2');
 // counter(); // 3
 
 function makeCounter() {
-     let counter = 0
+    let counter = 0
     return function () {
-         return counter + 1
+        return counter + 1
     }
 }
 
@@ -77,6 +77,25 @@ alert(counter())
 
 // Task 05
 // решить все задачи по рекурсии которые даны в конце статьи https://learn.javascript.ru/recursion
+//1)
+// function sumTo(x: number) {
+//      let sum = 0
+//      for (let i = 1; i <= x; i++) {
+//          return sum += i
+//      }
+//      return sum
+// }
+// function sumTo(x: number) {
+//      if ( x === 1 ) {
+//          return 1
+//      } else {
+//          return x + sumTo( x - 1)
+//      }
+// }
+// function sumTo(x: number) {
+//     return x * (x + 1) / 2
+// }
+
 
 // Task 06
 // написать функцию, которая повторяет функционал метода flat массива на всю глубину.
